@@ -105,7 +105,7 @@
                 </div>
                 <!-- /.row --><br><br><br><br>
                 <div style="text-align: center;">
-                <form class="form-inline" id="searchform">
+                <form class="form-inline" id="searchform" method="get">
   <div class="form-group">
     <label for="search" style="font-size:20px"><i class="fa fa-search"></i>  </label>
     <input type="text" class="form-control" id="search" name="search" placeholder="Search Twitter" autofocus="autofocus" size="50">
