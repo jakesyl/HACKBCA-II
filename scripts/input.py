@@ -24,5 +24,5 @@ class listener(StreamListener):
 auth = OAuthHandler(ckey, csecret)
 auth.set_access_token(atoken, asecret)
 twitterStream = Stream(auth, listener())
-twitterStream.filter(track=["#hackbca"])
+twitterStream.filter(track=["#apple"])
 
