@@ -1,15 +1,16 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
-
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Name: Jake Sylvestre
+    Site: https://github.com/jakesyl
 
-# THANKS
+    Name: Alex Parson
+    Site: https://github.com/aep000
 
-    <name>
+    Name: Zach Panzarino
+    Site: https://github.com/zachpanz88
 
-# TECHNOLOGY COLOPHON
+    Name: Rob Brinker
+    Site: https://github.com/Brinker1999
 
-    HTML5, CSS3
-    jQuery, Modernizr
+Built for hackBCA II
+# hackbca.com
