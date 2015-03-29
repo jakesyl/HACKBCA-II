@@ -2,6 +2,7 @@
 
     Name: Jake Sylvestre
     Site: https://github.com/jakesyl
+    Site: blog.jakesyl.com
 
     Name: Alex Parson
     Site: https://github.com/aep000

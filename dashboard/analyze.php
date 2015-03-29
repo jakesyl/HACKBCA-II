@@ -38,5 +38,23 @@ while($c<count($date)){
 }
 return $data;
 }
-echo gStock(array("9-9-2014","9-4-2014"),"MSFT");
+function getSymbol($name){
+$jsonData = file_get_contents("http://d.yimg.com/autoc.finance.yahoo.com/autoc?query=".$name."&callback=YAHOO.Finance.SymbolSuggest.ssCallback");
+$jsonData = substr($jsonData, 39 ,-1);
+$data = json_decode($jsonData);
+//print_r($data);
+return $data->{'ResultSet'}->{'Result'}[0]->{'symbol'};
+}
+
+
+$reddit = preg_replace("/ /","+",$reddit);
+
+$url = "https://loudelement-free-natural-language-processing-service.p.mashape.com/nlp-url/?text=" . $reddit;
+$response = Unirest\Request::get($url,
+  array(
+    "X-Mashape-Key" => "VXBkiZgWYCmshDeQLH3fSHqqxGHWp1ixNsejsnfNJo6tzD7HgD",
+    "Accept" => "application/json"
+  )
+);
+
 ?>
