@@ -72,7 +72,7 @@
                 </div><br>
                 <!-- /.row -->
                 <div style="text-align: center;">
-                <form class="form-inline" id="searchform" onsubmit="$('#loading').show();" method="get">
+                <form class="form-inline" id="searchform" onsubmit="$('#loading').show();" method="get" action="">
   <div class="form-group">
     <label for="search" style="font-size:20px"><i class="fa fa-search"></i>  </label>
     <input type="text" class="form-control" id="search" name="search" placeholder="Search" size="80" required>
