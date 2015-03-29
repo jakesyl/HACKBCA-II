@@ -75,7 +75,7 @@
                 <form class="form-inline" id="searchform" onsubmit="$('#loading').show();" method="get" action="">
   <div class="form-group">
     <label for="search" style="font-size:20px"><i class="fa fa-search"></i>  </label>
-    <input type="text" class="form-control" id="search" name="search" placeholder="Search" size="80" required>
+    <input type="text" class="form-control" id="search" name="search" placeholder="Search for a Company by Name" size="80" required>
   </div>
   <button type="submit" class="btn btn-default">Search</button>
 </form><br><hr><div id="loading" style="display:none;">Loading<br><img src="img/loading.gif"/></div></div>
