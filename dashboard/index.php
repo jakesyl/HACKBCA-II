@@ -72,13 +72,13 @@
                 </div><br>
                 <!-- /.row -->
                 <div style="text-align: center;">
-                <form class="form-inline" id="searchform" method="get">
+                <form class="form-inline" id="searchform" onsubmit="$('#loading').show();" method="get">
   <div class="form-group">
     <label for="search" style="font-size:20px"><i class="fa fa-search"></i>  </label>
     <input type="text" class="form-control" id="search" name="search" placeholder="Search" size="80" required>
   </div>
   <button type="submit" class="btn btn-default">Search</button>
-</form></div><br><hr>
+</form><br><hr><div id="loading" style="display:none;">Loading<br><img src="img/loading.gif"/></div></div>
                 <canvas id="test" height="400px" width="400px"></canvas>
                 </div>
                 <!-- /.row -->
