@@ -19,7 +19,7 @@
 
     <script src="js/main.js"></script>
 
-    <title>Analyzus</title>
+    <title>Analyz.us</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -52,7 +52,7 @@
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a class="navbar-brand" href="..">Analyzus <i class="fa fa-line-chart"></i></a>
+                <a class="navbar-brand" href="..">Analyz.us <i class="fa fa-line-chart"></i></a>
             </div>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <!-- /.navbar-collapse -->
@@ -66,7 +66,7 @@
                 <div class="row" >
                     <div class="col-lg-12">
                         <h1 class="page-header" style="text-align:center;font-size:80px">
-                            Analytics
+                            Analyz.us
                         </h1>
                     </div>
                 </div><br>
