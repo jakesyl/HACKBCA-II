@@ -9,6 +9,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+        <script src="js/jquery.js"></script>
+    
+    <!-- Chart.js -->
+    <script src="js/Chart.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
+
     <title>Analyzus</title>
 
     <!-- Bootstrap Core CSS -->
@@ -69,7 +79,7 @@
   </div>
   <button type="submit" class="btn btn-default">Search</button>
 </form></div><br><hr>
-                <canvas id="charts"></canvas>
+                <canvas id="test" height="400px" width="400px"></canvas>
                 </div>
                 <!-- /.row -->
 
@@ -83,13 +93,6 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    
-    <!-- Chart.js -->
-    <script src="js/Chart.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
 
 </body>
 
