@@ -1,7 +1,6 @@
 //TODO: Update our JSON structure to include a third dataset for headlines
 //TODO: Vertical lines for headline events with headline labels
 
-
 function process(result){
 	//Other thing in result that we should get are any options parameters
 	preData = JSON.parse(result.data);
@@ -17,7 +16,7 @@ function process(result){
 	
 	//Create data observations
 	//As a note, there should be equal numbers of data observations for both datasets
-	for(i = 0; i<preData.datasets.percents.length){
+	for(i = 0; i<preData.datasets.percents.length; i++){
 		percentSet.push(preData.datasets.percents[i]);
 		stockSet.push(preData.datasets.stocks[i]);
 	}
@@ -58,21 +57,45 @@ function process(result){
 
 // Get search query and send it up, using ajax, to our php thing.
 $(document).ready(function(){
-	
-	$('#submit').click(function sendData(){
+	$('#searchform').click(function parseReddit(){
 		var query = $('#search').val();
-		var url= encodeURI("http://www.reddit.com/r/worldnews/search.json?q=" + query + "&sort=top&t=year");
-		url.data.children[i]
-		$.ajax({
-			type: "POST",
-			url: // put url here,
-			data: query,
-			cache: false,
-			success: function successResponse(result){
-				process(result);
+		var url= encodeURI("http://www.reddit.com/r/worldnews/search.json?q=" + query + "&sort=top&t=year&restrict_sr=on");
+		titles = [];
+		links = [];
+		for(i = 0; i < 10; i++){
+			titles.push(url.data.children[i].data.title);
+			links.push(url.data.children[i].data.permalink);
+		}
+
+		comments = [];
+		
+		for(i = 0; i < links.length; i++){
+			templink = links[i].substring(0, (links[i].length - 1));
+			for(j = 0; j<templink[1].data.children.length; j++){
+				comments.push(templink[1].data.children[j].data.body);
 			}
-		});
-		return false;
+		}
+
+		var info = [titles, links, comments];
+
+		console.log(titles);
+
+		sendData(info);
+
 	});
+	return false;
 });	
+
+function sendData(info){
+	$.ajax({
+		type: "POST",
+		url: './aggregator.php',
+		data: info,
+		cache: false,
+		success: function successResponse(result){
+			process(result);
+		}
+	});
+}
+
 
