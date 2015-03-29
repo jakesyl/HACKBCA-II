@@ -89,7 +89,7 @@ $(document).ready(function(){
 function sendData(info){
 	$.ajax({
 		type: "POST",
-		url: './aggregator.php',
+		url: '../aggregator.php',
 		data: info,
 		cache: false,
 		success: function successResponse(result){
