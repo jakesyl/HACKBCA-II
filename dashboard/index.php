@@ -65,18 +65,10 @@
                 <form class="form-inline" id="searchform" method="get">
   <div class="form-group">
     <label for="search" style="font-size:20px"><i class="fa fa-search"></i>  </label>
-    <input type="text" class="form-control" id="search" name="search" placeholder="Search" size="100">
+    <input type="text" class="form-control" id="search" name="search" placeholder="Search" size="80" required>
   </div>
   <button type="submit" class="btn btn-default">Search</button>
-</form></div>
-                <script>
-function validateForm() {
-    var x = document.forms["searchform"]["search"].value;
-    if (x == null || x == "") {
-        return false;
-    }
-}
-</script><br><hr>
+</form></div><br><hr>
                 <canvas id="charts"></canvas>
                 </div>
                 <!-- /.row -->
