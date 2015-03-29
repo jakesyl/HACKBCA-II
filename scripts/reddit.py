@@ -16,15 +16,17 @@ def example(self,user,get=1):
 def get_top(query, subreddit):
 	links = []
 	url="http://www.reddit.com/r/" + subreddit + "/search.json?q=" + query + "&sort=top&t=year"
+	print url	
 	res = requests.get(url)
 
 	res = json.loads(res.text)
 	#print res	
 	res =  res["data"]
 	res = res["children"]
-	print res 
+	#print res 
 	for post in res:
 		data = []
+		#print post
 		post =  post["data"]
 		#post = post[0]
 		data.append(post["permalink"])
@@ -35,14 +37,15 @@ def get_top(query, subreddit):
 
 
 def get_comments(permalink):
-	#url = "http://www.reddit.com/" + permalink + 
-	pass
+	permalink = permalink[:-1]	
+	url = "http://www.reddit.com/" + permalink +  ".json"
+	print url
 #get permalink 
 
 #tests
-get_top("microsoft", "worldnews") 
+#get_top("microsoft", "worldnews") 
 
-
+get_comments("/r/dogs/comments/2hq421/tip_if_youre_considering_getting_your_first_dog/")
 
 
 # send dates
