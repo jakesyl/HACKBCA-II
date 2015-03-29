@@ -47,7 +47,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href=".">Analyzus <i class="fa fa-twitter"></i></a>
+                <a class="navbar-brand" href=".">Analyzus <i class="fa fa-line-chart"></i></a>
             </div>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
