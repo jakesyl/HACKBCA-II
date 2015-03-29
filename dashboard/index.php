@@ -102,7 +102,7 @@
                 <form class="form-inline" id="searchform" method="get">
   <div class="form-group">
     <label for="search" style="font-size:20px"><i class="fa fa-search"></i>  </label>
-    <input type="text" class="form-control" id="search" name="search" placeholder="Search Twitter" autofocus="autofocus" size="50">
+    <input type="text" class="form-control" id="search" name="search" placeholder="Search" autofocus="autofocus" size="50">
   </div>
   <button type="submit" class="btn btn-default">Search</button>
 </form><div style="font-size:150px"><i class="fa fa-newspaper-o"></i>
