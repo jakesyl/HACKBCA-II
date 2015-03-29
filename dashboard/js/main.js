@@ -55,37 +55,6 @@ function process(result){
 	var chart = new Chart(graph).Line(postData, postOptions);
 };
 
-// Get search query and send it up, using ajax, to our php thing.
-$(document).ready(function(){
-	$('#searchform').click(function parseReddit(){
-		var query = $('#search').val();
-		var url= encodeURI("http://www.reddit.com/r/worldnews/search.json?q=" + query + "&sort=top&t=year&restrict_sr=on");
-		titles = [];
-		links = [];
-		for(i = 0; i < 10; i++){
-			titles.push(url.data.children[i].data.title);
-			links.push(url.data.children[i].data.permalink);
-		}
-
-		comments = [];
-		
-		for(i = 0; i < links.length; i++){
-			templink = links[i].substring(0, (links[i].length - 1));
-			for(j = 0; j<templink[1].data.children.length; j++){
-				comments.push(templink[1].data.children[j].data.body);
-			}
-		}
-
-		var info = [titles, links, comments];
-
-		console.log(titles);
-
-		sendData(info);
-
-	});
-	return false;
-});	
-
 function sendData(info){
 	$.ajax({
 		type: "POST",
@@ -98,4 +67,66 @@ function sendData(info){
 	});
 }
 
+function parseComments(titles, links, tempjsons){
+		comments = [];
 
+		for(i = 0; i < links.length; i++){
+			console.log(tempjsons[i]);
+			temp = tempjsons[i];
+			for(j = 0; j<temp[1].data.children.length; j++){
+				comments.push(temp[1].data.children[j].data.body);
+			}
+		}
+
+		var info = [titles, links, comments];
+
+		sendData(info);
+}
+
+function sendLinks(titles, links, iteration, tempjsons){
+	$.ajax({
+		beforeSend: function (xhr) {
+    		xhr.setRequestHeader ("Authorization", "jdIje0INGlMbwGNWd6fa6w9Jx88");
+		},
+		type: "POST",
+		url: encodeURI("http://www.reddit.com" + links[iteration].substring(0, (links[iteration].length - 1)) + ".json/"),
+		success: function successResponse(result){
+			if(iteration < 10){
+				console.log("test");
+				tempjsons.push(result);
+				sendLinks(titles, links, iteration+1, tempjsons);
+			}
+			else{
+				parseComments(titles, links, tempjsons);
+			}
+		}
+	});
+}
+
+function parseTitlesLinks(redditData){
+		var titles = [];
+		var links = [];
+		for(i = 0; i < 10; i++){
+			titles.push(redditData.data.children[i].data.title);
+			links.push(redditData.data.children[i].data.permalink);
+		}
+		tempjsons = [];
+		sendLinks(titles, links, 0, tempjsons);
+}
+
+// Get search query and send it up, using ajax, to our php thing.
+$(document).ready(function(){
+	//TEMPORARY:
+	var query = "microsoft";
+	//var query = $('#search').val();
+	$('#search').click(function getReddit(){
+		$.ajax({
+			type: "GET",
+			url: encodeURI("http://www.reddit.com/r/worldnews/search.json?q=" + query + "&sort=top&t=year&restrict_sr=on"),
+			success: function successResponse(result){
+				parseTitlesLinks(result);
+			}
+		})
+	});
+	return false;
+});
