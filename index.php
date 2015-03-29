@@ -94,7 +94,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>About Analyzus</h2>
-                <p>Analyzus is an analytics engine that scans reddit to provide visualization of data. It compares trends in current events to trends in the stock market for a company to provide an analysis for investing.
+                <p>Analyzus is an analytics engine that scans reddit to provide visualization of data. It compares trends in current events to trends in the stock market for a company to provide an analysis for investing.</p><br>
                 <a href="dashboard" class="btn btn-default btn-lg"><span class="network-name">Dashboard</span></a>
             </div>
         </div>
