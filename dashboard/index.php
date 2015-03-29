@@ -47,7 +47,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href=".">Analyzus <i class="fa fa-twitter"></i></a>
+                <a class="navbar-brand" href=".">Analyzus <i class="fa fa-line-chart"></i></a>
             </div>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -88,7 +88,7 @@
                 <div class="row" >
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Search <small>Search Twitter</small>
+                            Search <small>Search</small>
                         </h1>
                         <ol class="breadcrumb">
                             <li class="active">
@@ -105,7 +105,7 @@
     <input type="text" class="form-control" id="search" name="search" placeholder="Search Twitter" autofocus="autofocus" size="50">
   </div>
   <button type="submit" class="btn btn-default">Search</button>
-</form><div style="font-size:150px"><i class="fa fa-twitter-square"></i>
+</form><div style="font-size:150px"><i class="fa fa-newspaper-o"></i>
                     </div></div>
                 <script>
 function validateForm() {
