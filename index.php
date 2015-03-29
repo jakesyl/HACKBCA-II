@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Home | Analyzus</title>
+    <title>Analyz.us</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -42,7 +42,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-line-chart"></i> <span class="light">Analyz</span>us
+                    <i class="fa fa-line-chart"></i> <span class="light">Analyz</span><font style="color:#FF5F5F;">.us</font>
                 </a>
             </div>
 
@@ -78,7 +78,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Analyzus</h1>
+                        <h1 class="brand-heading">Analyz<font style="color:#FF5F5F;">.us</font></h1>
                         <p class="intro-text">An Analytics Engine to Change the Web</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
@@ -93,8 +93,8 @@
     <section id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Analyzus</h2>
-                <p>Analyzus is an analytics engine that scans reddit to provide visualization of data. It compares trends in current events to trends in the stock market for a company to provide an analysis for investing.</p><br><p>Go to the dashboard to get started</p><br>
+                <h2>About Analyz<font style="color:#FF5F5F;">.us</font></h2>
+                <p>Analyz.us is an analytics engine that scans reddit to provide visualization of data. It compares trends in current events to trends in the stock market for a company to provide an analysis for investing.</p><br><p>Go to the dashboard to get started</p><br>
                 <a href="dashboard" class="btn btn-default btn-lg"><span class="network-name">Dashboard</span></a>
             </div>
         </div>
@@ -105,8 +105,8 @@
         <div class="download-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Analyzus</h2>
-                    <p>You can download Analyzus for free on Android devices.</p>
+                    <h2>Download Analyz.us</h2>
+                    <p>You can download Analyz.us for free on Android devices.</p>
                     <a href="analyzus.apk" class="btn btn-default btn-lg">Download Android App</a>
                 </div>
             </div>
@@ -148,7 +148,7 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Analyzus 2015</p>
+            <p>Copyright &copy; Analyz.us 2015</p>
         </div>
     </footer>
 
