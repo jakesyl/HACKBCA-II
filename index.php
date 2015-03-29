@@ -132,7 +132,7 @@
                         <p>Zach Panzarino</p><p>Frontend Developer</p>
                         <a href="https://github.com/zachpanz88" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                     </li>
-                    <li><br><br><br><br>
+                    <li><br><br>
                         <p>Ridoy Majumdar</p><p>Backend Developer</p>
                         <a href="https://github.com/rmajumdar" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                     </li>
