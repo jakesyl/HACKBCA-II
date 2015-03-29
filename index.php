@@ -73,15 +73,15 @@
     </nav>
 
     <!-- Intro Header -->
-    <header class="intro" style="color:#000000;">
+    <header class="intro">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">Analyzus</h1>
                         <p class="intro-text">An Analytics Engine to Change the Web</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                        <a href="#about" class="btn btn-circle page-scroll" style="color:#000000;">
-                            <i class="fa fa-angle-double-down animated" style="color:#000000;"></i>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
                 </div>
