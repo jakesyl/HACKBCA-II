@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Search | Analyzus</title>
+    <title>Analyzus</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -22,6 +22,7 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="../img/Logo.png">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -55,16 +56,16 @@
                 <div class="row" >
                     <div class="col-lg-12">
                         <h1 class="page-header" style="text-align:center;font-size:80px">
-                            Search
+                            Analyzus
                         </h1>
                     </div>
-                </div>
-                <!-- /.row --><br><br><br><br>
+                </div><br>
+                <!-- /.row -->
                 <div style="text-align: center;">
                 <form class="form-inline" id="searchform" method="get">
   <div class="form-group">
     <label for="search" style="font-size:20px"><i class="fa fa-search"></i>  </label>
-    <input type="text" class="form-control" id="search" name="search" placeholder="Search" autofocus="autofocus" size="100">
+    <input type="text" class="form-control" id="search" name="search" placeholder="Search" size="100">
   </div>
   <button type="submit" class="btn btn-default">Search</button>
 </form></div>
@@ -75,8 +76,8 @@ function validateForm() {
         return false;
     }
 }
-</script>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</script><br><hr>
+                <canvas id="charts"></canvas>
                 </div>
                 <!-- /.row -->
 
