@@ -94,9 +94,10 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>About Analyzus</h2>
-                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
+                <p>Analyzus is an analytics engine that scans mulitple sites to provide visualization of data.</p>
+                <p>Analyzus was created at hackBCA II on March 28-29.</p>
+                <p>Click below to visit the dashboard and get started.</p>
+                <a href="dashboard" class="btn btn-default btn-lg"><span class="network-name">Dashboard</span></a>
             </div>
         </div>
     </section>
@@ -132,7 +133,7 @@
                         <p>Zach Panzarino</p><p>Frontend Developer</p>
                         <a href="https://github.com/zachpanz88" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                     </li>
-                    <li><br><br><br><br>
+                    <li><br><br>
                         <p>Ridoy Majumdar</p><p>Backend Developer</p>
                         <a href="https://github.com/rmajumdar" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                     </li>
