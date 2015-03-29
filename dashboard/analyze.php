@@ -39,4 +39,16 @@ while($c<count($date)){
 return $data;
 }
 echo gStock(array("9-9-2014","9-4-2014"),"MSFT");
+
+
+$reddit = preg_replace("/ /","+",$reddit);
+
+$url = "https://loudelement-free-natural-language-processing-service.p.mashape.com/nlp-url/?text=" . $reddit;
+$response = Unirest\Request::get($url,
+  array(
+    "X-Mashape-Key" => "VXBkiZgWYCmshDeQLH3fSHqqxGHWp1ixNsejsnfNJo6tzD7HgD",
+    "Accept" => "application/json"
+  )
+);
+
 ?>
